@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="parameters"
+		label="JHACKS_CONFIG_CONFIGURATION"
+		description="JHACKS_CONFIG_COMPONENT_CONFIGURATION"
+		>
+		<field name="upload_maxsize" type="text" default="2" label="JHACKS_PARAMS_UPLOAD_MAX_SIZE" size="50" description="JHACKS_PARAMS_FILE_UPLOAD_MAX_SIZE_MB" />
+		<field name="trash_dir" type="text" default="[COM_ADMIN]/images/trash" label="JHACKS_PARAMS_TRASH_DIR" size="50" description="JHACKS_PARAMS_TRASH_DIR_INFORMATION" />
+		<field name="upload_dir_operations_data_file" type="hidden" default="administrator/components/com_jhacks/files/operations" label="JHACKS_PARAMS_UPLOAD_DIR_OPERATIONS_DATA_FILE" size="50" description="JHACKS_PARAMS_UPLOAD_DIR_INFORMATION" />
+		<!-- hack -->
+		<field name="backup_dir" type="hidden" default="administrator/components/com_jhacks/files/backup" label="JHACKS_PARAMS_BACKUP_FOLDER" size="50" description="JHACKS_PARAMS_BACKUP_FOLDER_DESCRIPTION" />
+		<field name="load_jquery" type="radio" default="1" label="Load Jquery library in Backend?" description="">
+		  <option value="0">JNO</option>
+		  <option value="1">JYES</option>
+		</field>
+		<field name="use_log" type="radio" default="1" label="Use Log feature?" description="if actived, it will be created a log for each task performed by Jhacks, it's useful for debugging.">
+		  <option value="0">JNO</option>
+		  <option value="1">JYES</option>
+		</field>		
+		<field name="comment_marker" type="radio" default="1" label="Do you wanna use the comment marker in the replacement string?" description="JHACKS_PARAMS_COMMENT_MARKER_DESCRIPTION">
+		  <option value="0">JNO</option>
+		  <option value="1">JYES</option>
+		</field>		
+		<!-- hack -->
+	</fieldset>
+
+	<fieldset
+		name="permissions"
+		label="JHACKS_CONFIG_PERMISSIONS"
+		description="JHACKS_CONFIG_DEFAULT_PERMISSIONS_USED_FOR_ALL_CONTENT_IN_THIS_COMPONENT"
+		>
+		<field
+			name="rules"
+			type="rules"
+			label="JHACKS_CONFIG_COMPONENT_PERMISSIONS"
+			filter="rules"
+			validate="rules"
+			component="com_jhacks"
+			section="component">
+
+
+
+		</field>
+	</fieldset>
+
+
+</config>

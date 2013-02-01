@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade" client="administrator">
+	<name>Jhacks</name>
+	<author>Girolamo Tomaselli</author>
+	<creationDate>2012-05-01</creationDate>
+	<copyright>2012 - Girolamo Tomaselli</copyright>
+	<authorEmail>girotomaselli@gmail.com</authorEmail>
+	<authorUrl><![CDATA[http://bygiro.com]]></authorUrl>
+	<version><![CDATA[0.4.0]]></version>
+	<license><![CDATA[GPLv2 or later]]></license>
+	<description><![CDATA[A complete solution to keep track of all your hacks and modifications on the files of your website. You can modify the files and revert back to the original files within few clicks, it's very useful if you wanna update the the joomla core or the extensions file without lose the customizations done. For more information visit the official website. <a href='http://jhacks.com' target='_blank'>www.jhacks.com</a>]]></description>
+
+        <update>
+            <schemas>
+                <schemapath type="mysql">sql/updates</schemapath>
+            </schemas>
+        </update>
+
+	<administration>
+
+		<menu img="components/com_jhacks/images/icon-16-jhacks.png">JHACKS_MENU_JHACKS</menu>
+		<submenu>
+			
+			<menu img="components/com_jhacks/images/icon-16-jhacks_hacks.png" link="option=com_jhacks&amp;view=hacks&amp;layout=hacks">JHACKS_MENU_HACKS</menu>
+			<menu img="components/com_jhacks/images/icon-16-jhacks_operations.png" link="option=com_jhacks&amp;view=operations">JHACKS_MENU_OPERATIONS</menu>
+			<menu img="components/com_jhacks/images/icon-16-jhacks_processes.png" link="option=com_jhacks&amp;view=processes">JHACKS_MENU_PROCESSES</menu>
+			<menu img="components/com_jhacks/images/icon-16-jhacks_logs.png" link="option=com_jhacks&amp;view=logs">JHACKS_MENU_LOGS</menu>
+
+            
+		</submenu>
+
+		<files folder="admin">
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>css</folder>
+			<folder>dom</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>jhacks.php</filename>
+			<filename>license.txt</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_jhacks.ini</language>
+			<language tag="en-GB">language/en-GB.com_jhacks.sys.ini</language>
+		</languages>
+
+	</administration>
+
+
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<scriptfile>script.php</scriptfile>
+
+
+
+
+
+</extension>

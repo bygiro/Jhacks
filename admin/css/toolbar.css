@@ -1,0 +1,43 @@
+/**                               ______________________________________________
+*                          o O   |                                              |
+*                 (((((  o      <    Generated with Cook Self Service  V1.5.2   |
+*                ( o o )         |______________________________________________|
+* --------oOOO-----(_)-----OOOo---------------------------------- www.j-cook.pro --- +
+* @version		0.4.0
+* @package		Jhacks
+* @subpackage	Languageoverrides
+* @copyright	2012 - Girolamo Tomaselli
+* @author		Girolamo Tomaselli - http://bygiro.com - girotomaselli@gmail.com
+* @license		GPLv2 or later
+*
+* /!\  Joomla! is free software.
+* This version may have been modified pursuant to the GNU General Public License,
+* and as distributed it includes or is derivative of works licensed under the
+* GNU General Public License or other free or open source software licenses.
+*
+*             .oooO  Oooo.     See COPYRIGHT.php for copyright notices and details.
+*             (   )  (   )
+* -------------\ (----) /----------------------------------------------------------- +
+*               \_)  (_/
+*/
+
+.icon-16-task-new 		{ background-image: url('../images/icon-16-task-new.png'); }
+.icon-16-task-edit 		{ background-image: url('../images/icon-16-task-edit.png'); }
+.icon-16-task-publish 		{ background-image: url('../images/icon-16-task-publish.png'); }
+.icon-16-task-unpublish 		{ background-image: url('../images/icon-16-task-unpublish.png'); }
+.icon-16-task-delete 		{ background-image: url('../images/icon-16-task-delete.png'); }
+.icon-16-task-config 		{ background-image: url('../images/icon-16-task-config.png'); }
+.icon-16-task-apply 		{ background-image: url('../images/icon-16-task-apply.png'); }
+.icon-16-task-save 		{ background-image: url('../images/icon-16-task-save.png'); }
+.icon-16-task-cancel 		{ background-image: url('../images/icon-16-task-cancel.png'); }
+
+
+
+.icon-48-jhacks 		{ background-image: url('../images/icon-48-jhacks.png'); }
+.icon-48-jhacks_hacks 		{ background-image: url('../images/icon-48-jhacks_hacks.png'); }
+.icon-48-jhacks_controlpanel 		{ background-image: url('../images/icon-48-jhacks_controlpanel.png'); }
+.icon-48-jhacks_operations 		{ background-image: url('../images/icon-48-jhacks_operations.png'); }
+.icon-48-jhacks_logs 		{ background-image: url('../images/icon-48-jhacks_logs.png'); }
+.icon-48-jhacks_processes 		{ background-image: url('../images/icon-48-jhacks_processes.png'); }
+.icon-48-jhacks_templateoverrides 		{ background-image: url('../images/icon-48-jhacks_templateoverrides.png'); }
+.icon-48-jhacks_languageoverrides 		{ background-image: url('../images/icon-48-jhacks_languageoverrides.png'); }

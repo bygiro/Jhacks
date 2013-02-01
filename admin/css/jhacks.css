@@ -1,0 +1,587 @@
+/**                               ______________________________________________
+*                          o O   |                                              |
+*                 (((((  o      <    Generated with Cook Self Service  V1.5.2   |
+*                ( o o )         |______________________________________________|
+* --------oOOO-----(_)-----OOOo---------------------------------- www.j-cook.pro --- +
+* @version		0.4.0
+* @package		Jhacks
+* @subpackage	
+* @copyright	2012 - Girolamo Tomaselli
+* @author		Girolamo Tomaselli - http://bygiro.com - girotomaselli@gmail.com
+* @license		GPLv2 or later
+*
+* /!\  Joomla! is free software.
+* This version may have been modified pursuant to the GNU General Public License,
+* and as distributed it includes or is derivative of works licensed under the
+* GNU General Public License or other free or open source software licenses.
+*
+*             .oooO  Oooo.     See COPYRIGHT.php for copyright notices and details.
+*             (   )  (   )
+* -------------\ (----) /----------------------------------------------------------- +
+*               \_)  (_/
+*/
+
+
+.required {border-left:3px red solid;}
+.ajax-required select{	border-left:3px red solid;}
+.invalid {border-color:red;}
+.filter_buttons{float:right;}
+
+.grid_wrapper th,
+.grid_wrapper td{	text-align:center;}
+
+
+
+
+
+.fieldsform{	background-color:#fff;}
+.fieldsfly{	background-color:#fff;}
+
+
+fieldset.filters label.filter{	display:block;	font-weigth:bold;	font-style:italic;	color:#333;	border-left:solid 2px #444;	padding-left:5px;	margin:0;}
+
+.flt-left{	float:left;}
+.flt-right{	float:right;}
+
+
+
+
+
+/**
+*	AJAX
+*/
+
+/* Chains direction */
+div.ajaxchain-filter,
+div.ajaxchain-wrapper{
+	float:left;  		/* Horizontal */
+/*	margin-left:10px;       Vertical */
+}
+
+/* Ajax separtator */
+div.ajaxchain-filter div.separator{	padding:0; margin:0;	padding-left:10px;	background-image:url(../images/breadcrumb_separator.png);	background-position:left;	background-repeat:no-repeat;}
+
+
+/**
+*	FILTERS & FIELDS
+*/
+
+
+
+/* calendar picker style */
+img.calendar{	margin-top:0;	margin-bottom:-5px;}
+div.filter.datepicker input{	margin-right:-1px;}
+
+
+
+
+/* Field validator */
+.field_message span.message_info{	color:#006600;	font-style:italic;}
+.field_message span.message_incorrect{	color:#FF0000;	font-style:italic;}
+.field_message span.message_required{	color:#FF0000;	font-style:italic;}
+
+
+.validatoricon{	width:16px;	height:16px;	background-position:center;	background-repeat:no-repeat;}
+.validatoricon_incorrect{	background-image:url(../images/incorrect.png);}
+.validatoricon_valid{	background-image:url(../images/valid.png);}
+
+/* Field validator end */
+
+
+
+
+.group_level_1{	text-align:left;	padding-left:10px;	font-size:18px;	font-weight:bold;	background-color:#BBB;}
+
+
+.jhacks_button {
+	padding: 5px 10px;
+	display: inline;
+	background: #777 url(../images/jhacks_button.png) repeat-x bottom;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: 1px 1px #666;
+}
+.jhacks_button:hover {
+	background-position: 0 center;
+}
+.jhacks_button:active {
+	background-position: 0 top;
+	position: relative;
+	top: 1px;
+	padding: 6px 10px 4px;
+}
+.jhacks_button.red { background-color: #e50000; }
+.jhacks_button.purple { background-color: #9400bf; }
+.jhacks_button.green { background-color: #58aa00; }
+.jhacks_button.orange { background-color: #ff9c00; }
+.jhacks_button.blue { background-color: #2c6da0; }
+.jhacks_button.black { background-color: #333; }
+.jhacks_button.white { background-color: #fff; color: #000; text-shadow: 1px 1px #fff; }
+.jhacks_button.small { font-size: 75%; padding: 3px 7px; }
+.jhacks_button.small:active { padding: 4px 7px 2px; background-position: 0 top; }
+.jhacks_button.large { font-size: 125%; padding: 7px 12px; }
+.jhacks_button.large:active { padding: 8px 12px 6px; background-position: 0 top; }
+
+.jhacks_button.red,
+.jhacks_button.purple,
+.jhacks_button.green,
+.jhacks_button.orange,
+.jhacks_button.blue,
+.jhacks_button.black,
+.jhacks_button.black,
+.jhacks_button.red
+{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.091em;
+	font-weight: bold;
+}
+
+.info_creator,
+.fileselected_container {
+	margin: 5px;
+	padding:10px;
+	border: 1px solid grey;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.itemselected {
+	padding: 5px;
+	border: 1px solid green;
+	margin-left: 5px;
+	font-size: 16px;
+	font-weight: lighter;
+	font-style:italic;
+	letter-spacing:1px;
+	color: green;
+}
+
+div#element-box div.m form table.adminlist tr td a.close-reveal-modal {
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table.jhacks {
+	width: 100%;
+}
+
+table.jhacks td{
+	padding: 3px;
+}
+
+table.jhacks td.key{
+	width: 180px;
+}
+
+.fieldsform {
+	padding-top: 15px;
+}
+
+#copypasteinfo {
+	color: #69B31A;
+	font-weight: bold;
+	font-size: 16px;
+	display: none;
+}
+#creator_browser,
+#sourcecode {
+	display: none;
+}
+
+a.close-reveal-modal.jhacks_button {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/* auto resize textarea */
+textarea#replacement,
+textarea#search_key{
+    width: 100%;
+	height: 20px;
+	resize: none;
+	padding: 3px;
+}
+
+pre {
+	overflow: auto;
+	font-size: 15px;
+}
+
+.icon-32-import {
+	background-image: url("../images/icon-32-import.png");
+}
+
+.icon-32-synchronize {
+	background-image: url("../images/icon-32-synchronize.png");
+}
+
+a.toolbar span.icon-32-export {
+	background-image: url("../images/icon-32-export.png");
+}
+
+.icon-32-controlpanel {
+	background-image: url("../images/icon-32-controlpanel.png");
+}
+
+#file_import,
+#sync_form {
+	position:absolute;
+/*	top: 50%; */
+	top: 10%;
+	left: 10%;
+	right: 10%;
+/*	width:350px; */
+/*	height:330px; */
+/*	margin-top: -165px; *//*set to a negative number 1/2 of your height*/
+/*	margin-left: -350px; /*set to a negative number 1/2 of your width*/
+/*	width: 750px; */
+}
+
+
+.targetcode,
+#processes_creator,
+#browsebox{
+	top: 10%;
+	left: 6.5%;
+	right: 6.5%;
+}
+
+#import_button {
+	color: #FFFFFF;
+    text-decoration: none;
+	font-size: 16px;
+}
+
+.hack_desc {
+	max-height: 150px;
+	overflow: auto;
+	width: 100%;
+}
+
+table#grid.adminlist.jhacks td.jhacks_conflicts{
+	border: 1px dotted red;
+}
+
+table.tooltip_process td.key{
+	text-align:right;
+	font-style:italic;
+	color: #666666;
+}
+
+table.tooltip_process td.value{
+	text-align: left;
+}
+
+table.tooltip_process td {
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+
+#filestodo {
+	max-height: 250px;
+	overflow: auto;
+	width: 100%;
+}
+
+#system-message dd.message ul {
+    max-height: 100px;
+    overflow: auto;
+}
+/* progress bar */
+.meter { 
+	height: 20px;  /* Can be anything */
+	position: relative;
+	margin: 0 0 10px; /* Just for demo spacing */
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+	background-image: -webkit-gradient(
+	  linear,
+	  left bottom,
+	  left top,
+	  color-stop(0, rgb(43,194,83)),
+	  color-stop(1, rgb(84,240,84))
+	 );
+	background-image: -moz-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	-webkit-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
+}
+.meter > span:after, .animate > span > span {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: 
+	   -webkit-gradient(linear, 0 0, 100% 100%, 
+	      color-stop(.25, rgba(255, 255, 255, .2)), 
+	      color-stop(.25, transparent), color-stop(.5, transparent), 
+	      color-stop(.5, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, transparent), to(transparent)
+	   );
+	background-image: 
+		-moz-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	z-index: 1;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+
+.animate > span:after {
+	display: none;
+}
+
+@-webkit-keyframes move {
+   0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 50px 50px;
+    }
+}
+
+.orange > span {
+	background-color: #f1a165;
+	background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+	background-image: -webkit-linear-gradient(#f1a165, #f36d0a); 
+}
+
+.red > span {
+	background-color: #f0a3a3;
+	background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
+	background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+}
+
+.nostripes > span > span, .nostripes > span:after {
+	-webkit-animation: none;
+	background-image: none;
+}
+/* progress bar */
+
+span.verify_ok {
+	color: green;
+}
+
+span.verify_error {
+	color: red;
+}
+
+table.adminlist.jhacks td.order {
+	width: 80px;
+}
+
+table.jhacks_th td{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.template_body,
+.type_body,
+.element_body,
+.view_body,
+.filename_options_body,
+.filename_body {
+	
+}
+
+.admintable td.key div.template_body,
+.admintable td.key div.type_body,
+.admintable td.key div.element_body,
+.admintable td.key div.view_body,
+.admintable td.key div.filename_body {
+	padding-left: 15px;
+}
+
+.admintable.jhacks{
+	width: 100%;
+}
+
+#item2override,
+#overridefile {
+	display: none;
+}
+
+/* autosize */
+.txtstuff {
+  /*  resize: none; */ /* remove this if you want the user to be able to resize it in modern browsers */
+    overflow-x: hidden;
+}
+
+.hiddendivtxtarea {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+}
+
+/* the styles for 'commmon' are applied to both the textarea and the hidden clone */
+/* these must be the same for both */
+.textcontent {
+    width: 100%;
+    height: auto;
+	max-height: 600px;
+    overflow-x: hidden;
+}
+/*
+.lbr {
+    line-height: 3px;
+}
+*/
+/* autosize */
+
+.formError .formErrorContent {
+	left: 60px;
+	top: 25px;
+}
+
+.formError .formErrorArrow div {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: none;
+}
+
+.formErrorArrow {
+	
+}
+
+/* search strings */
+.overrider-spinner {
+	background-image:url(../images/spinner.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+#refresh-status{
+	display:none;
+	height:16px;
+	padding-left:25px;
+	background-position:left;
+}
+
+#results-container{
+	display:none;
+	padding-bottom:10px;
+}
+#more-results{
+	display:none;
+	height:16px;
+	padding:10px 0;
+}
+.row0{
+	background-color:#f7f7f7;
+}
+.row1{
+	background-color:#f0f0f0;
+	border-top:1px solid #ffffff;
+}
+.result{
+	padding:5px 0px;
+	border:1px solid #ffffff;
+}
+.result:hover{
+	background-color:#e8f6fe;
+	cursor:pointer;
+}
+
+td.result-key{
+	color:#666666;
+	padding-left:5px;
+}
+
+td.result-string{
+	padding-left:25px;
+	margin-top:5px;
+}
+
+td.result-lang {
+	width: 95px;
+}
+/* search strings */
+
+#refresh-status {
+	color: red;
+}
+
+#refresh-result {
+	color: green;
+}
+
+p.info {
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+textarea.fly_code {
+	width: 100%;
+	max-height: 300px;
+}
